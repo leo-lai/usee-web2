@@ -170,7 +170,7 @@ export default {
 					img: '/static/product/sanhaoyantieidnex.jpg',
 					qr: '/static/product/sanhaoyantieidnex-qr.png',
 					info: '/static/product/sanhaoyantieidnex-info.jpg',
-					name: '轻莹紧致眼贴',
+					name: '晶润紧致眼贴',
 					desc: '针对电脑一族的眼贴',
 					flip: false
 				},
