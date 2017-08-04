@@ -86,6 +86,21 @@
 				  </el-col>
 				</el-row>
     		<!-- U视资讯 end-->
+				<br>
+				<!-- 友情链接 -->
+    		<div class="l-column-tit">
+    			<div class="_inner">
+    				<h3>友情链接</h3>
+    				<p>Links</p>
+    			</div>
+    		</div>
+    		<div class="l-text-center">
+    			<a target="_blank" href="http://www.o2opc-cn.com" style="color:inherit; text-decoration:none;">
+    				<img src="~assets/images/sdh-logo.png" alt="">
+    				<p>中国O2O私董会</p>
+    			</a>
+    		</div>
+    		<!-- 友情链接 end-->
     		<br><br>
     	</div>
     </div>
