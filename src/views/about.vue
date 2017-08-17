@@ -47,7 +47,7 @@
 			    		</div>
 			    		<div class="l-text-center">
 			    			<p>联系电话: 400-1806900</p>
-			    			<p>邮箱：fanya@usee1.cn</p>
+			    			<p>邮箱：service@ushiyihao.com</p>
 			    			<p>地址：广州市天河区沙太路陶庄5号空间3F009</p>
 			    		</div>
     				</div>
@@ -64,12 +64,6 @@
     							<p><span class="l-text-gray l-margin-r-s">互联网IT总监</span><span class="l-fs-xl">程晶</span></p>
     							<p>新西兰坎特伯雷国立大学B.Sc计算机科学专业。 </p>
     							<p>担任过HWS，Torrent Forest，云端物联等国内外公司核心岗位，创造过千万级别业绩。 擅长团队搭建，多维度，跨行业数据闭环系统设计，建设，执行，优化，维护。</p>
-    						</li>
-    						<li>
-    							<img class="_avatar" src="~assets/images/jia.jpg" alt="">
-    							<p><span class="l-text-gray l-margin-r-s">市场一部运营总监</span><span class="l-fs-xl">贾苗</span></p>
-    							<p>英国伯明翰大学市场分析学专业。</p>
-    							<p>曾任上海COOPER电气江苏分公司营销总监，江苏省电力公司电气销售部运营总监</p>
     						</li>
     						<li>
     							<img class="_avatar" src="~assets/images/xie.jpg" alt="">

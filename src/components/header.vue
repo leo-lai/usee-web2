@@ -10,15 +10,15 @@
 		  <el-col :span="16">
 		  	<el-menu class="l-page-hd-menu" mode="horizontal" router :default-active="$route.path" @select="clickMenu">
 				  <el-menu-item index="/">首页</el-menu-item>
-				  <el-submenu index="/sys">
+				  <el-submenu index="/sys/">
 				    <template slot="title">爱眼护眼</template>
 				    <el-menu-item index="/sys?_sto=eye" >瞳诊系统</el-menu-item>
 				    <el-menu-item index="/sys?_sto=train" >护眼训练</el-menu-item>
 				    <el-menu-item index="/sys?_sto=check" >体质检测</el-menu-item>
 				  </el-submenu>
-				  <el-menu-item index="/shop">U视商城</el-menu-item>
-				  <el-menu-item index="/join">区域合作</el-menu-item>
-				  <el-menu-item index="/about">关于我们</el-menu-item>
+				  <el-menu-item index="/shop/">U视商城</el-menu-item>
+				  <el-menu-item index="/join/">区域合作</el-menu-item>
+				  <el-menu-item index="/about/">关于我们</el-menu-item>
 				</el-menu>
 		  </el-col>
 		</el-row>
@@ -29,29 +29,24 @@
 import VueScrollTo from 'vue-scrollto'
 
 export default {
+	computed: {
+		defaultActive() {
+			return window.location.pathname
+		}
+	},
 	methods: {
 		clickMenu(path) {
 			let query = this.$utils.url.getArgs(path)
-			if(query._sto){
-				setTimeout(()=>{
-					let toEle = document.getElementById(query._sto)
-					if(toEle){
-						VueScrollTo.scrollTo( toEle, 300, {
-					    container: 'body',
-					    easing: 'ease-in',
-					    offset: -60,
-					    cancelable: true,
-					    onDone: function() {
-					      // scrolling is done
-					    },
-					    onCancel: function() {
-					      // scrolling has been interrupted
-					    }
-						})
-					}
-				}, 300)	
+			let toEle = document.getElementById(query._sto)
+			if(query._sto && toEle){
+				VueScrollTo.scrollTo( toEle, 300, {
+			    container: 'body',
+			    easing: 'ease-in',
+			    offset: -60,
+			    cancelable: true
+				})
 			}else{
-				document.body.scrollTop = 0
+				window.location.href = path
 			}
 			return false
 		}

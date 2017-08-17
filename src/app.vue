@@ -19,7 +19,7 @@ export default {
 @import '~element-ui/lib/theme-default/index.css';
 /* @import '~assets/theme/theme-green/index.css'; */
 /* @import '~font-awesome/css/font-awesome.min.css'; */
-@import '~nprogress/nprogress.css';
+// @import '~nprogress/nprogress.css';
 @import '~src/styles/base.scss';
 @import '~src/styles/global.scss';
 </style>

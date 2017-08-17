@@ -1,4 +1,4 @@
-import babelpolyfill    from 'babel-polyfill'
+// import babelpolyfill    from 'babel-polyfill'
 import Vue              from 'vue'
 import VueRouter        from 'vue-router'
 import ElementUI        from 'element-ui'
@@ -10,7 +10,7 @@ import store            from './vuex/store'
 import routes           from './routes'
 import App              from './App'
 
-import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // import NProgress        from 'nprogress'
 // NProgress.configure({ showSpinner: false })
@@ -38,7 +38,7 @@ Vue.use({
 
 const router = new VueRouter({
   routes,
-  // mode: 'history',
+  mode: 'history',
 })
 
 
@@ -53,5 +53,8 @@ Vue._vue = new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+})
 
+document.addEventListener('DOMContentLoaded', function () {
+  Vue._vue.$mount('#app')
+})
