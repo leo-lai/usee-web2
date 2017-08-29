@@ -67,35 +67,6 @@ var webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
-    new HtmlWebpackPlugin({
-      favicon:  'src/assets/favicon.png',
-      filename: 'update.html',
-      template: 'update.html',
-      inject: false,
-      minify: {
-        minifyCSS: true,
-        minifyJS: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true
-        // more options:
-        // https://github.com/kangax/html-minifier#options-quick-reference
-      }
-    }),
-    new HtmlWebpackPlugin({
-      // title: '',
-      favicon: 'src/assets/favicon.png',
-      filename: 'open-in-weixin.html',
-      template: 'open-in-weixin.html',
-      inject: false,
-      minify: {
-        minifyCSS: true,
-        minifyJS: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: false
-      }
-    }),
     // extract webpack runtime and module manifest to its own file in order to
     // prevent vendor hash from being updated whenever app bundle is updated
     new webpack.optimize.CommonsChunkPlugin({
